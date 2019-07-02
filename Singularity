@@ -10,10 +10,10 @@ From: ubuntu:16.04
 export PATH=/opt/EnergyPlus/:$PATH
 
 %apprun energyplus
-exec /opt/EnergyPlus/energyplus
+exec /opt/EnergyPlus/energyplus "$@"
 
 %apprun runenergyplus
-exec /opt/EnergyPlus/runenergyplus
+exec /opt/EnergyPlus/runenergyplus "$@"
 
 
 %post
